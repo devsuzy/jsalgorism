@@ -57,19 +57,19 @@ function solution (data) {
     - 상위 30%만 선발
     - 지원자가 상위 30% 미만일 경우 아무도 출전하지 않음
     ```js
-        if (topRankerNum === 0) {
-        return [];
+    if (topRankerNum === 0) {
+    return [];
     }
     ```
 2. `i.slice(1).reduce((x,y) => x+y, 0);`
     - 지원자의 점수 총 합계 구하기
     - 동점자가 있을 경우 같은 배열에 놓기
     ```js
-        if (sum in processedScore) {
-            processedScore[sum].push(i[0])
-        } else {
-            processedScore[sum] = [i[0]]
-        }
+    if (sum in processedScore) {
+        processedScore[sum].push(i[0])
+    } else {
+        processedScore[sum] = [i[0]]
+    }
     ```
 3. `processedScore.sort((a,b) => b[0] - a[0])`
     - 점수가 높은 순으로 정렬(내림차순)
