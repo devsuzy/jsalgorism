@@ -6,7 +6,6 @@
 * 통과 여부 : Y
 
 ### 문제 풀이
-
 ```javascript
 function solution(data){
     const special = 3300;

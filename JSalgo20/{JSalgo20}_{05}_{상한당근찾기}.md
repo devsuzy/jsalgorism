@@ -6,7 +6,6 @@
 * 통과 여부 : Y
 
 ### 문제 정답
-
 ```javascript
 function solution(data){
     for (let i = 0; i < data.length; i++) {

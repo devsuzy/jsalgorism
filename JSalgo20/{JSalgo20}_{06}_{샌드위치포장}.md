@@ -6,7 +6,6 @@
 * 통과 여부 : Y
 
 ### 문제 정답
-
 ```javascript
 function solution(data){
     let result = 0
