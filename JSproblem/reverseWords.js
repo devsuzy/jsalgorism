@@ -10,3 +10,8 @@ function solution(s) {
 }
 
 console.log(solution("hello world javascript"));
+
+// "hello world javascript"
+// → ["hello", "world", "javascript"]
+// → ["javascript", "world", "hello"]
+// → "javascript world hello"

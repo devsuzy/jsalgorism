@@ -1,5 +1,6 @@
-// 문제
+// Is Anagram
 // 두 문자열이 아나그램인지 판별하시오.
+// Given two strings s and t, determine whether they are anagrams.
 
 // input
 // "listen", "silent"
@@ -8,6 +9,7 @@
 // true
 
 function solution (s, t) {
+  // 길이 먼저 비교하기
   if (s.length !== t.length) return false;
 
   const count = new Map();

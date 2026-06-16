@@ -19,18 +19,18 @@ function solution(nums) {
   }
 
   let frequencyCount = 0;
-  let mostFrequenyNum = nums[0];
+  let mostFrequencyNum = nums[0];
 
   for (const [num, count] of newMap) {
    if (count > frequencyCount) {
-      mostFrequenyNum = num;
+      mostFrequencyNum = num;
       frequencyCount = count;
    } else if (count === frequencyCount) {
-      mostFrequenyNum = Math.min(mostFrequenyNum, num);
+      mostFrequencyNum = Math.min(mostFrequencyNum, num);
     }
   }
 
-  return mostFrequenyNum;
+  return mostFrequencyNum;
 }
 
 console.log(solution([4, 2, 2, 3, 3, 1]));
